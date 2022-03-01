@@ -26,6 +26,12 @@ public class ArrayL {
 
         lista.remove(0); // remove remove o elemento da posição 0
 
+        /* contains usa o próprio método Equals; se eu quiser fazer um Equals com outro código, eu monto a função equals e coloco @Override acima da função
+        logo, o contains utilizará esse equals que eu criei, não o próprio */
+        // equals compara referências
+        boolean existe = lista.contains(cc2); // contains retorna true or false pra se existe ou não o elemento na lista
+        System.out.println("Existe na lista? " + existe);
+
         // forma mais antiga
         for(int i=0; i<lista.size();i++){
             System.out.println(lista.get(i)); // imprime cada elemento de conta
