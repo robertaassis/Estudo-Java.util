@@ -14,7 +14,8 @@ package Arrays;
                 System.out.println(idades[i]);
             }
 
-            // faz um array com 5 espaços, mas vai ocupar o array de forma dinamica
+            // faz um array com 5 espaços, mas vai ocupar o array de forma dinamica.
+            // Array não traz posições ocupadas, por isso código abaixo foi feito
             GuardadorReferencias guardador = new GuardadorReferencias();
             Conta cc = new ContaCorrente(22,11);
             guardador.adiciona(cc);
