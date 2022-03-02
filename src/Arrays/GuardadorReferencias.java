@@ -20,6 +20,6 @@ public class GuardadorReferencias {
     }
 
     public Conta getReferencia(pos){ // traz a conta dessa posição
-        return this.referencia[pos];
+        return this.referencias[pos];
     }
 }

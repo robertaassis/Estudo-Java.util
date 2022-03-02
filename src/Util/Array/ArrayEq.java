@@ -26,8 +26,8 @@ public class ArrayEq {
 
     // forma mais antiga
         for(int i=0; i<lista.size();i++){
-        System.out.println(lista.get(i)); // imprime cada elemento de conta
-    }
+            System.out.println(lista.get(i)); // imprime cada elemento de conta
+        }
 
     // forma mais simples
 
