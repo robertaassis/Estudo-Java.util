@@ -2,18 +2,22 @@ package Util.Array;
 import Arrays.GuardadorReferencias;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 // Arquivo Array escrito de uma forma mais prática (com ArrayList invés de Array puro)
 public class ArrayL {
     public static void main(String[] args) {
 
         // código abaixo é um generics
-        ArrayList<Conta> lista = new ArrayList<Conta>(); // se não tivesse <Conta>, iria guardar ArrayList de qualquer coisa
+        ArrayList<Conta> lista = new ArrayList<Conta>(); // se não tivesse <Conta>, iria guardar ArrayList de qualquer tipo
         // já que tem, guarda ArrayList só de Conta (ArrayList de tipo Conta)
 
         GuardadorReferencias guardador = new GuardadorReferencias();
         Conta cc = new ContaCorrente(22,11);
         lista.add(cc);
+
+        List<String> argumentos = Arrays.asList(args); // transforma um array para uma lista
 
         Conta cc2 = new ContaCorrente(22,11);
         lista.add(cc2); // add adiciona na lista

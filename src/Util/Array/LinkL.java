@@ -1,6 +1,6 @@
 package Util.Array;
 
-/* LinkedList; ArrayList tem tamanho limitado, já LinkedList consegue manipular a lista para que se algo
+/* LinkedList; ArrayList tem tamanho limitado (elementos precisam ser copiados quando não há mais capacidade) já LinkedList consegue manipular a lista para que se algo
  for removido, o espaço vazio seja reorganizado automaticamente para não ficar vazio */
 
 import Arrays.GuardadorReferencias;
